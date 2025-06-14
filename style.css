@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: aqua;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.container {
+    width: 400px;
+    height: 50%;
+    background-color: azure;
+
+}
+
+.container-imagem{
+    display: flex;
+    justify-content: center;
+
+}
+
+.img {
+    background-image:url(Photoroom-20250222_233904[1].jpg);
+    height: 120px;
+    width: 120px;
+    background-size: cover;
+    border-radius: 50%;
+}

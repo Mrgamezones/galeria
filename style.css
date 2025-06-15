@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-
-*{
+:root {
+  --gold: #ddb575;
+  --cream: #E5E0D5;
+}
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -22,16 +24,24 @@ body {
 
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+    width: 90%;
+}
+
 .container {
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     height: 100%;
-    background-color: #E5E0D5;
+    background-color: var(--cream);
+    padding: 20px;
+
 
 }
 
-.container-imagem{
+.container-imagem {
     margin-top: 75px;
-    background-color: #E5E0D5;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -53,18 +63,19 @@ body {
     border: 3px solid white;
 }
 
-.container-botao{
+.container-botao {
     display: flex;
     align-items: center;
     margin-top: 20px;
     flex-direction: column;
-    gap: 30px; 
+    gap: 20px; 
+    width: 100%;
 
 
 }
 
-.botao{
-    width: 90%;
+.botao {
+    width: 100%;
     height: 60px;
     border: 2px solid white;
     border-radius: 50px;
@@ -79,19 +90,35 @@ body {
 
 }
 
-.botao i{
-    margin-left: 20px;
+.botao i {
+    margin-left: 30px;
     font-size: 25px;
+    color: var(--gold);
 
 }
 
-.botao p{
+.botao p {
     flex: 1;
     text-align: center;
     font-weight: 600;
+    color: var(--gold);
 }
-.botao:hover{
+.botao:hover {
     background-color:#d8c8b9;
-    cursor: pointer;
+    transform: translateY(-2px);
 
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+:root {
+    --gold: #ddb575;
+}
+
+.botao:focus {
+    outline: 2px solid var(--gold);
 }
